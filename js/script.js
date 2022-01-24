@@ -5,7 +5,6 @@ new Vue ({
     data: {
 
         emailList: [],
-        index: 0,
 
     },
 
@@ -16,8 +15,6 @@ new Vue ({
             axios.get('https://flynn.boolean.careers/exercises/api/random/mail').then((email) => {
 
             this.emailList.push(email.data.response);
-
-            this.index++;
 
             });
 
